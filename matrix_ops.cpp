@@ -45,9 +45,9 @@ int ** matrix_mul(int **m1, int **m2, int row, int col)
 
 	// Matrix Multiplication
 	for (int i = 0; i < row; i++)				// Row of 1st matrix
-		for (int j = 0; j < col; j++) {			// Col of 1st matrix
+		for (int j = 0; j < col; j++) {			// Col of 2nd matrix
 			sum = 0;
-			for (int k = 0; k < row; k++)		// Col of 2nd matrix
+			for (int k = 0; k < row; k++)		// Col of 1st matrix
 				sum = sum + m1[i][k] * m2[k][j];
 			resM[i][j] = sum;
 		}
